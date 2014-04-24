@@ -48,10 +48,10 @@ cacheSolve <- function(x, ...) {
   # not cached, so we get the matrix into data
   data <- x$get()
   # and compute the inverse
-  inv <- solve(data, ...)
+  inverse <- solve(data, ...)
   # then cache the inverse
-  x$setinv(inv)
+  x$setinv(inverse)
   # and return the inverse as well
-  inv
+  inverse
 }
 
